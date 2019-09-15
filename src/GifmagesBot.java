@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GifmagesBot extends TelegramLongPollingBot {
-    private static final String TOKEN = "972751462:AAHxxb4soOb-ALh76qm95odFXPR2W_ZKDhA";
+    private static final String TOKEN = "";
     private static final String BOT_NAME = "Gifmagesbot";
     private List<String> data = new ArrayList<>();
     private String CURRENT_REQUEST = null;
@@ -25,7 +25,7 @@ public class GifmagesBot extends TelegramLongPollingBot {
     protected GifmagesBot(DefaultBotOptions defaultBotOptions){
         super(defaultBotOptions);
     }
-    protected GifmagesBot(){}
+    GifmagesBot(){}
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {

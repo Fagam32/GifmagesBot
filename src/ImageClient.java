@@ -11,10 +11,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageClient {
-    private static final String url1 = "https://pixabay.com/api/?key=13390764-73e8103915e6bf65433c7b376&q=";
+class ImageClient {
+    private static final String url1 = "";
 
-    public List<String> getImage(String searchRequest, int page){
+    List<String> getImage(String searchRequest, int page){
         StringBuilder sb = new StringBuilder();
         //Getting JSON File
         try{
@@ -46,7 +46,7 @@ public class ImageClient {
         } else return null;
         return urlImages;
     }
-    public List<String> getImage(String searchRequest){
+    List<String> getImage(String searchRequest){
       return getImage(searchRequest,1);
     }
 }
